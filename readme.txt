@@ -1,7 +1,7 @@
 === amr shortcode any widget ===
 Contributors: anmari, md99999 as maintainer
 Tags: shortcode, widget, page, templates, page template, widget_area, sidebar
-Tested up to: 5.8
+Tested up to: 7.1
 Version: 4.1.2
 Stable tag: 4.1.2
 
@@ -164,6 +164,7 @@ If you only using widget, maybe inserting the whole sidebar or widgertarea would
 == Changelog ==
 
 = Version 4.1.2 =
+*  Tested on WordPress 7.1.1
 *  Security: fixed stored XSS via the class attribute of [do_widget_area] when widget_area_class is used.
 *  Security: widget/sidebar debug listings and error messages are no longer shown to visitors, only to users who can manage widgets.
 *  Security: blocked direct access to plugin files, escaped all admin page output, used a prepared query on the settings page.
