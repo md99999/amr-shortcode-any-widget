@@ -2,8 +2,8 @@
 Contributors: anmari, md99999 as maintainer
 Tags: shortcode, widget, page, templates, page template, widget_area, sidebar
 Tested up to: 5.8
-Version: 4.0
-Stable tag: 4.0
+Version: 4.1.2
+Stable tag: 4.1.2
 
 == Description ==
 Insert a widget or multiple widgets or a entire widget area (sidebar) into a page using a shortcode. 
@@ -162,6 +162,13 @@ If you only using widget, maybe inserting the whole sidebar or widgertarea would
 [do_widget_area]
 
 == Changelog ==
+
+= Version 4.1.2 =
+*  Security: fixed stored XSS via the class attribute of [do_widget_area] when widget_area_class is used.
+*  Security: widget/sidebar debug listings and error messages are no longer shown to visitors, only to users who can manage widgets.
+*  Security: blocked direct access to plugin files, escaped all admin page output, used a prepared query on the settings page.
+*  Fixed broken admin page code (undefined variables) and PHP warnings when a sidebar is not found.
+*  Replaced extract() on shortcode attributes; strict validation of title and wrap tags.
 
 = Version 4.1  -  Updated all php to pass vulnerability scans. 
 Tested on 
